@@ -1,0 +1,21 @@
+{
+	"name": "Ubuntu",
+	"image": "mcr.microsoft.com/devcontainers/base:jammy",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"vscjava.vscode-java-pack",
+				"vmware.vscode-boot-dev-pack",
+				"eamodio.gitlens"
+			]
+		}
+	},
+	"features": {
+		"ghcr.io/devcontainers-extra/features/mise:1": {},
+		"ghcr.io/roul/devcontainer-features/mise-node:1": {},
+		"ghcr.io/roul/devcontainer-features/mise-java:1": {}
+	}
+	// "forwardPorts": [],
+	// "postCreateCommand": "uname -a",
+	// "customizations": {},
+}
