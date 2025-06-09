@@ -1,0 +1,41 @@
+version: 2
+updates:
+ - package-ecosystem: "devcontainers"
+   directory: "/"
+   schedule:
+     interval: weekly
+   open-pull-requests-limit: 5
+   labels:
+     - dependencies
+     - devcontainers
+   # security-updates: not supported for devcontainers
+   groups:
+     devcontainers-all:
+       patterns:
+         - "*"
+ - package-ecosystem: "maven"
+   directory: "/backend"
+   schedule:
+     interval: weekly
+   open-pull-requests-limit: 5
+   labels:
+     - dependencies
+     - backend
+   security-updates: true
+   groups:
+     maven-all:
+       patterns:
+         - "*"
+ - package-ecosystem: "npm"
+   directory: "/frontend"
+   schedule:
+     interval: weekly
+   open-pull-requests-limit: 5
+   labels:
+     - dependencies
+     - frontend
+   security-updates: true
+   groups:
+     npm-all:
+       patterns:
+         - "*"
