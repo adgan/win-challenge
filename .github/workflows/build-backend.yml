@@ -5,9 +5,15 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'backend/**'
+      - '.github/workflows/build-backend.yml'
   pull_request:
     branches:
       - main
+    paths:
+      - 'backend/**'
+      - '.github/workflows/build-backend.yml'
   workflow_dispatch:
 
 permissions:

@@ -5,6 +5,9 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'frontend/**'
+      - '.github/workflows/deploy-react-to-gh-pages.yml'
   workflow_dispatch:
 
 permissions:
