@@ -1,0 +1,17 @@
+meta {
+  name: GetUserStatsForGame
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://api.steampowered.com/ISteamUserStats/GetUserStatsForGame/v0002/?appid=730&key={{STEAM_API_KEY}}&steamid={{STEAM_USER_ID}}
+  body: none
+  auth: inherit
+}
+
+params:query {
+  appid: 730
+  key: {{STEAM_API_KEY}}
+  steamid: {{STEAM_USER_ID}}
+}

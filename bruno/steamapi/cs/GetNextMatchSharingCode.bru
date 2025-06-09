@@ -1,0 +1,18 @@
+meta {
+  name: GetNextMatchSharingCode
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://api.steampowered.com/ICSGOPlayers_730/GetNextMatchSharingCode/v1?key={{STEAM_API_KEY}}&steamid={{STEAM_USER_ID}}&steamidkey={{STEAM_USER_AUTH_CODE}}&knowncode=CSGO-Whjny-be7kN-qcxJB-7LQKq-MhC3J
+  body: none
+  auth: inherit
+}
+
+params:query {
+  key: {{STEAM_API_KEY}}
+  steamid: {{STEAM_USER_ID}}
+  steamidkey: {{STEAM_USER_AUTH_CODE}}
+  knowncode: CSGO-d
+}
